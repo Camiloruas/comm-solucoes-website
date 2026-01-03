@@ -6,6 +6,7 @@ import Services from './components/Services';
 import BeforeAfterSlider from './components/BeforeAfterSlider';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
+import InstagramBanner from './components/InstagramBanner';
 import { CheckCircle, ShieldCheck, Trophy, Clock, MessageSquare } from 'lucide-react';
 
 const App: React.FC = () => {
@@ -136,6 +137,9 @@ const App: React.FC = () => {
       </section>
 
       <Footer />
+
+      {/* Floating Instagram Button */}
+      <InstagramBanner />
 
       {/* Floating WhatsApp for Mobile Persistence */}
       <a href="https://wa.me/5527996955663" target="_blank" rel="noopener noreferrer" className="fixed bottom-8 right-8 z-40 bg-emerald-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform md:hidden">
