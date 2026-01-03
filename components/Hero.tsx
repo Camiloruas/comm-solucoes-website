@@ -4,7 +4,7 @@ import { ArrowRight, MessageCircle } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-20 bg-white overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center pt-28 pb-12 lg:pt-20 bg-white overflow-hidden">
       {/* Background Decor */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gray-50 -z-10 hidden lg:block"></div>
 
@@ -19,12 +19,12 @@ const Hero: React.FC = () => {
             <span className="text-xs font-bold tracking-widest text-gray-600 uppercase">Excelência em Acabamento</span>
           </div>
 
-          <h1 className="text-6xl md:text-8xl font-black leading-none tracking-tighter text-black">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-none tracking-tighter text-black">
             TRANSFORMAMOS <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-emerald-500 to-blue-500">AMBIENTES</span>
           </h1>
 
-          <p className="text-xl text-gray-600 max-w-lg leading-relaxed font-light">
+          <p className="text-lg md:text-xl text-gray-600 max-w-lg leading-relaxed font-light">
             Especialistas em pintura residencial e comercial com texturas decorativas de alto padrão. Elevamos o valor do seu imóvel com precisão técnica e criatividade.
           </p>
 
@@ -40,15 +40,15 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
-        <div className="relative animate-fade-in-right">
+        <div className="relative animate-fade-in-right mt-8 lg:mt-0">
           <div className="absolute -top-10 -right-10 w-64 h-64 bg-amber-400/20 rounded-full blur-3xl"></div>
           <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-blue-400/20 rounded-full blur-3xl"></div>
 
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl border-[12px] border-white transform rotate-3 hover:rotate-0 transition-transform duration-500">
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl border-[8px] md:border-[12px] border-white transform rotate-3 hover:rotate-0 transition-transform duration-500">
             <img
               src="https://images.unsplash.com/photo-1562664377-709f2c337eb2?q=80&w=1200&auto=format&fit=crop"
               alt="Pintura Moderna"
-              className="w-full h-[600px] object-cover"
+              className="w-full h-[400px] md:h-[600px] object-cover"
             />
           </div>
         </div>
