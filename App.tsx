@@ -86,18 +86,18 @@ const App: React.FC = () => {
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                <div className="p-6 bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm text-center lg:text-left">
-                  <ShieldCheck className="text-blue-500 mb-4 mx-auto lg:mx-0" size={32} />
+                <div className="p-6 bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm text-center">
+                  <ShieldCheck className="text-blue-500 mb-4 mx-auto" size={32} />
                   <p className="font-bold text-black dark:text-white uppercase text-xs tracking-widest mb-2">Segurança</p>
                   <p className="text-sm text-gray-500">Equipe segurada e uniformizada.</p>
                 </div>
-                <div className="p-6 bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm text-center lg:text-left">
-                  <Clock className="text-emerald-500 mb-4 mx-auto lg:mx-0" size={32} />
+                <div className="p-6 bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm text-center">
+                  <Clock className="text-emerald-500 mb-4 mx-auto" size={32} />
                   <p className="font-bold text-black dark:text-white uppercase text-xs tracking-widest mb-2">Pontualidade</p>
                   <p className="text-sm text-gray-500">Cumprimento rigoroso de cronograma.</p>
                 </div>
-                <div className="p-6 bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm text-center lg:text-left">
-                  <CheckCircle className="text-red-500 mb-4 mx-auto lg:mx-0" size={32} />
+                <div className="p-6 bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm text-center">
+                  <CheckCircle className="text-red-500 mb-4 mx-auto" size={32} />
                   <p className="font-bold text-black dark:text-white uppercase text-xs tracking-widest mb-2">Qualidade</p>
                   <p className="text-sm text-gray-500">Acabamento premium impecável.</p>
                 </div>
