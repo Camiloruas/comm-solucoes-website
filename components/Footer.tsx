@@ -9,11 +9,7 @@ const Footer: React.FC = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
           <div className="space-y-6">
             <div className="flex items-center gap-2">
-              <div className="flex gap-0.5">
-                <div className="w-1.5 h-6 bg-red-500"></div>
-                <div className="w-1.5 h-6 bg-emerald-500"></div>
-                <div className="w-1.5 h-6 bg-blue-500"></div>
-              </div>
+              <img src="/logo.png" alt="Logo COMM Soluções" className="h-8 w-auto" />
               <span className="text-2xl font-black tracking-tighter">COMM SOLUÇÕES</span>
             </div>
             <p className="text-gray-400 font-light leading-relaxed">
@@ -44,7 +40,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4 text-gray-400 font-light">
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-emerald-500" />
-                (11) 98765-4321
+                (27) 99695-5663
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-blue-500" />
@@ -52,7 +48,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center gap-3">
                 <MapPin size={18} className="text-red-500" />
-                São Paulo, SP - Atendemos Capital e Grande SP
+                Itabuna, BA.
               </li>
             </ul>
           </div>

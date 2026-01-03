@@ -26,12 +26,7 @@ const Navbar: React.FC = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <div className="flex gap-0.5">
-            <div className="w-2 h-8 bg-red-500"></div>
-            <div className="w-2 h-8 bg-emerald-500"></div>
-            <div className="w-2 h-8 bg-blue-500"></div>
-            <div className="w-2 h-8 bg-amber-500"></div>
-          </div>
+          <img src="/logo.png" alt="Logo COMM Soluções" className="h-10 w-auto" />
           <span className="text-2xl font-black tracking-tighter text-black">COMM <span className="font-light text-gray-500">SOLUÇÕES</span></span>
         </div>
 
