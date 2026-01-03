@@ -22,13 +22,13 @@ const App: React.FC = () => {
       <section id="portfolio" className="py-24 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
+            <div className="space-y-8 text-center lg:text-left">
               <div className="space-y-4">
-                <h2 className="text-sm font-bold tracking-[0.3em] uppercase text-gray-400">Transformação Real</h2>
-                <p className="text-4xl md:text-5xl font-black text-black leading-tight">MUDANÇA RADICAL <br />EM CADA DETALHE</p>
-                <div className="w-24 h-1 bg-emerald-500 rounded-full"></div>
+                <h2 className="text-xs sm:text-sm font-bold tracking-[0.3em] uppercase text-gray-400">Transformação Real</h2>
+                <h2 className="text-2xl sm:text-3xl md:text-5xl font-black text-black leading-tight">MUDANÇA RADICAL <br />EM CADA DETALHE</h2>
+                <div className="w-24 h-1 bg-emerald-500 rounded-full mx-auto lg:mx-0"></div>
               </div>
-              <p className="text-xl text-gray-500 font-light leading-relaxed">
+              <p className="text-lg md:text-xl text-gray-500 font-light leading-relaxed text-justify lg:text-left">
                 Utilizamos as melhores marcas do mercado (Suvinil, Coral, Sherwin-Williams) e técnicas exclusivas de aplicação para garantir resultados duradouros e visualmente impactantes.
               </p>
               <ul className="space-y-4">
@@ -71,33 +71,33 @@ const App: React.FC = () => {
                 className="rounded-3xl shadow-2xl w-full h-[500px] object-cover"
               />
               <div className="absolute top-1/2 -translate-y-1/2 -right-8 w-24 h-24 bg-amber-500 rounded-full flex items-center justify-center text-white border-8 border-gray-50">
-                <Trophy size={40} />
+                <Trophy size={32} />
               </div>
             </div>
 
-            <div className="lg:col-span-7 space-y-8 order-1 lg:order-2">
+            <div className="lg:col-span-7 space-y-8 order-1 lg:order-2 text-center lg:text-left">
               <div className="space-y-4">
-                <h2 className="text-sm font-bold tracking-[0.3em] uppercase text-gray-400">Nossa História</h2>
-                <p className="text-4xl md:text-5xl font-black text-black leading-tight">PROFISSIONALISMO <br />QUE INSPIRA CONFIANÇA</p>
-                <div className="w-24 h-1 bg-blue-500 rounded-full"></div>
+                <h2 className="text-xs sm:text-sm font-bold tracking-[0.3em] uppercase text-gray-400">Nossa História</h2>
+                <h2 className="text-2xl sm:text-3xl md:text-5xl font-black text-black leading-tight">PROFISSIONALISMO <br />QUE INSPIRA CONFIANÇA</h2>
+                <div className="w-24 h-1 bg-blue-500 rounded-full mx-auto lg:mx-0"></div>
               </div>
-              <p className="text-lg text-gray-600 font-light leading-relaxed">
+              <p className="text-lg text-gray-600 font-light leading-relaxed text-justify lg:text-left">
                 Fundada com o propósito de redefinir o setor de pintura, a COMM SOLUÇÕES une tradição técnica com as tendências mais modernas de decoração. Não somos apenas pintores; somos consultores de estética para o seu ambiente.
               </p>
 
-              <div className="grid sm:grid-cols-3 gap-6">
-                <div className="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm">
-                  <ShieldCheck className="text-blue-500 mb-4" size={32} />
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div className="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm text-center lg:text-left">
+                  <ShieldCheck className="text-blue-500 mb-4 mx-auto lg:mx-0" size={32} />
                   <p className="font-bold text-black uppercase text-xs tracking-widest mb-2">Segurança</p>
                   <p className="text-sm text-gray-500">Equipe segurada e uniformizada.</p>
                 </div>
-                <div className="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm">
-                  <Clock className="text-emerald-500 mb-4" size={32} />
+                <div className="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm text-center lg:text-left">
+                  <Clock className="text-emerald-500 mb-4 mx-auto lg:mx-0" size={32} />
                   <p className="font-bold text-black uppercase text-xs tracking-widest mb-2">Pontualidade</p>
                   <p className="text-sm text-gray-500">Cumprimento rigoroso de cronograma.</p>
                 </div>
-                <div className="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm">
-                  <CheckCircle className="text-red-500 mb-4" size={32} />
+                <div className="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm text-center lg:text-left">
+                  <CheckCircle className="text-red-500 mb-4 mx-auto lg:mx-0" size={32} />
                   <p className="font-bold text-black uppercase text-xs tracking-widest mb-2">Qualidade</p>
                   <p className="text-sm text-gray-500">Acabamento premium impecável.</p>
                 </div>

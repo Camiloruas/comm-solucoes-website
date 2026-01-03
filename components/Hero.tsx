@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gray-50 -z-10 hidden lg:block"></div>
 
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
-        <div className="space-y-8 animate-fade-in-up">
+        <div className="space-y-8 animate-fade-in-up text-center lg:text-left">
           <div className="inline-flex items-center gap-2 bg-gray-100 px-4 py-2 rounded-full">
             <span className="flex gap-1">
               <span className="w-2 h-2 rounded-full bg-red-500"></span>
@@ -19,21 +19,21 @@ const Hero: React.FC = () => {
             <span className="text-xs font-bold tracking-widest text-gray-600 uppercase">Excelência em Acabamento</span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-none tracking-tighter text-black">
+          <h1 className="text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-black leading-tight md:leading-none tracking-tighter text-black">
             TRANSFORMAMOS <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-emerald-500 to-blue-500">AMBIENTES</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-gray-600 max-w-lg leading-relaxed font-light">
+          <p className="text-lg md:text-xl text-gray-600 max-w-lg leading-relaxed font-light text-justify lg:text-left mx-auto lg:mx-0">
             Especialistas em pintura residencial e comercial com texturas decorativas de alto padrão. Elevamos o valor do seu imóvel com precisão técnica e criatividade.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <a href="https://wa.me/5527996955663" className="inline-flex items-center justify-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-5 rounded-2xl font-bold text-lg transition-all transform hover:-translate-y-1 shadow-xl shadow-emerald-200">
+          <div className="flex flex-col items-center sm:flex-row sm:justify-center lg:justify-start gap-4 pt-4 w-full">
+            <a href="https://wa.me/5527996955663" className="inline-flex items-center justify-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-4 md:px-8 md:py-5 rounded-2xl font-bold text-base md:text-lg transition-all transform hover:-translate-y-1 shadow-xl shadow-emerald-200">
               <MessageCircle size={24} />
               Solicitar Orçamento
             </a>
-            <a href="#portfolio" className="inline-flex items-center justify-center gap-3 bg-white border-2 border-gray-100 hover:border-black text-black px-8 py-5 rounded-2xl font-bold text-lg transition-all">
+            <a href="#portfolio" className="inline-flex items-center justify-center gap-3 bg-white border-2 border-gray-100 hover:border-black text-black px-6 py-4 md:px-8 md:py-5 rounded-2xl font-bold text-base md:text-lg transition-all">
               Ver Projetos
               <ArrowRight size={20} />
             </a>

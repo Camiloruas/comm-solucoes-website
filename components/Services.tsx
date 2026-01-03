@@ -46,12 +46,12 @@ const Services: React.FC = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service) => (
-            <div key={service.id} className="group bg-white p-10 rounded-3xl shadow-sm hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:-translate-y-2">
-              <div className={`w-16 h-16 ${service.color} text-white rounded-2xl flex items-center justify-center mb-8 transform transition-transform group-hover:scale-110 group-hover:rotate-6`}>
+            <div key={service.id} className="group bg-white p-10 rounded-3xl shadow-sm hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:-translate-y-2 text-center lg:text-left">
+              <div className={`w-16 h-16 ${service.color} text-white rounded-2xl flex items-center justify-center mb-8 transform transition-transform group-hover:scale-110 group-hover:rotate-6 mx-auto lg:mx-0`}>
                 {service.icon}
               </div>
               <h3 className="text-xl font-bold mb-4 text-gray-900">{service.title}</h3>
-              <p className="text-gray-500 leading-relaxed font-light">{service.description}</p>
+              <p className="text-gray-500 leading-relaxed font-light text-justify lg:text-left">{service.description}</p>
             </div>
           ))}
         </div>
