@@ -36,7 +36,7 @@ const App: React.FC = () => {
                   'Nivelamento perfeito de superfícies',
                   'Isolamento total de móveis e pisos',
                   'Efeitos de textura sob medida',
-                  'Garantia de 2 anos em todos os serviços'
+
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-center gap-3 text-gray-700 font-medium">
                     <CheckCircle className="text-emerald-500" size={20} />
@@ -48,8 +48,8 @@ const App: React.FC = () => {
 
             <div className="relative">
               <BeforeAfterSlider
-                beforeImg="https://images.unsplash.com/photo-1513161455079-7dc1de15ef3e?q=80&w=1200&auto=format&fit=crop"
-                afterImg="https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=1200&auto=format&fit=crop"
+                beforeImg="/sala.png"
+                afterImg="/sala1.png"
               />
               <div className="absolute -bottom-6 -right-6 bg-black text-white p-6 rounded-2xl shadow-xl hidden md:block">
                 <p className="text-3xl font-black">100%</p>
@@ -66,7 +66,7 @@ const App: React.FC = () => {
           <div className="grid lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-5 relative order-2 lg:order-1">
               <img
-                src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800&auto=format&fit=crop"
+                src="/pintura-parede.png"
                 alt="Nossa Equipe"
                 className="rounded-3xl shadow-2xl w-full h-[500px] object-cover"
               />
