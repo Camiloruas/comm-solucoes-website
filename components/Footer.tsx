@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Instagram, Facebook, Mail, Phone, MapPin } from 'lucide-react';
+import { Instagram, Facebook, Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -16,11 +16,11 @@ const Footer: React.FC = () => {
               Elevando o padrão de acabamento em pinturas e texturas residenciais e comerciais desde 2015. Transformamos espaços com paixão e técnica.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center hover:bg-white hover:text-black transition-all">
+              <a href="https://www.instagram.com/commsolucoes/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center hover:bg-white hover:text-black transition-all">
                 <Instagram size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center hover:bg-white hover:text-black transition-all">
-                <Facebook size={18} />
+              <a href="https://wa.me/5527996955663" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center hover:bg-white hover:text-black transition-all">
+                <MessageCircle size={18} />
               </a>
             </div>
           </div>
@@ -40,7 +40,9 @@ const Footer: React.FC = () => {
             <ul className="space-y-4 text-gray-400 font-light">
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-emerald-500" />
-                (27) 99695-5663
+                <a href="https://wa.me/5527996955663" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 transition-colors">
+                  (27) 99695-5663
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-blue-500" />

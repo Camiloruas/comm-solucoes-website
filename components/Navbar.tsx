@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
               {link.name}
             </a>
           ))}
-          <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" className="bg-black text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-gray-800 transition-all transform hover:scale-105">
+          <a href="https://wa.me/5527996955663" target="_blank" rel="noopener noreferrer" className="bg-black text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-gray-800 transition-all transform hover:scale-105">
             ORÇAMENTO
           </a>
         </div>
@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
               {link.name}
             </a>
           ))}
-          <a href="https://wa.me/5500000000000" className="bg-red-500 text-white p-4 rounded-xl text-center font-bold">
+          <a href="https://wa.me/5527996955663" className="bg-red-500 text-white p-4 rounded-xl text-center font-bold">
             SOLICITAR ORÇAMENTO
           </a>
         </div>
