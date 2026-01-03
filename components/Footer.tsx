@@ -4,7 +4,7 @@ import { Instagram, Facebook, Mail, Phone, MapPin, MessageCircle } from 'lucide-
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-black text-white pt-20 pb-10">
+    <footer className="bg-black dark:bg-black text-white pt-20 pb-10 border-t border-transparent dark:border-gray-800">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
           <div className="space-y-6">
@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="pt-10 border-t border-gray-900 text-center text-gray-500 text-sm font-light">
+        <div className="pt-10 border-t border-gray-900 dark:border-gray-800 text-center text-gray-500 text-sm font-light">
           <p>© {new Date().getFullYear()} COMM SOLUÇÕES - Todos os direitos reservados. Desenvolvido com foco em resultados.</p>
         </div>
       </div>
