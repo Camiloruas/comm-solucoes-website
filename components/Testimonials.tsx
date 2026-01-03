@@ -36,7 +36,7 @@ const Testimonials: React.FC = () => {
             <h2 className="text-sm font-bold tracking-[0.3em] uppercase text-gray-400">O que dizem</h2>
             <p className="text-4xl md:text-5xl font-black text-black">DEPOIMENTOS</p>
           </div>
-          <div className="flex gap-1 text-emerald-500 items-center">
+          <div className="flex gap-1 text-emerald-500 items-center justify-center lg:justify-start">
             <Star fill="currentColor" size={20} />
             <Star fill="currentColor" size={20} />
             <Star fill="currentColor" size={20} />
@@ -48,7 +48,7 @@ const Testimonials: React.FC = () => {
 
         <div className="grid md:grid-cols-3 gap-10">
           {testimonials.map((t) => (
-            <div key={t.id} className="relative bg-gray-50 p-10 rounded-3xl border border-gray-100">
+            <div key={t.id} className="relative bg-gray-50 p-10 rounded-3xl border border-gray-100 text-center flex flex-col items-center lg:items-start lg:text-left">
               <Quote className="absolute top-8 right-8 text-gray-200" size={48} />
               <div className="flex gap-1 mb-6 text-amber-500">
                 {[...Array(t.rating)].map((_, i) => <Star key={i} size={16} fill="currentColor" />)}
