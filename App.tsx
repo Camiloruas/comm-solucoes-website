@@ -8,6 +8,7 @@ import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import InstagramBanner from './components/InstagramBanner';
 import { CheckCircle, ShieldCheck, Trophy, Clock, MessageSquare } from 'lucide-react';
+import { CONTACT_INFO, IMAGES } from './constants';
 
 const App: React.FC = () => {
   return (
@@ -49,8 +50,8 @@ const App: React.FC = () => {
 
             <div className="relative">
               <BeforeAfterSlider
-                beforeImg="/sala.png"
-                afterImg="/sala1.png"
+                beforeImg={IMAGES.beforeAfter.before}
+                afterImg={IMAGES.beforeAfter.after}
               />
               <div className="absolute -bottom-6 -right-6 bg-black dark:bg-gray-800 text-white p-6 rounded-2xl shadow-xl hidden md:block">
                 <p className="text-3xl font-black">100%</p>
@@ -67,7 +68,7 @@ const App: React.FC = () => {
           <div className="grid lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-5 relative order-2 lg:order-1">
               <img
-                src="/pintura-parede.png"
+                src={IMAGES.team}
                 alt="Nossa Equipe"
                 className="rounded-3xl shadow-2xl w-full h-[500px] object-cover"
               />
@@ -126,8 +127,8 @@ const App: React.FC = () => {
                 Solicite um orçamento personalizado hoje mesmo. Atendimento rápido via WhatsApp com consultoria técnica gratuita.
               </p>
               <div className="pt-6">
-                <a href="https://wa.me/5527996955663" className="inline-flex items-center gap-4 bg-white text-black hover:bg-gray-100 px-10 py-6 rounded-3xl font-black text-xl transition-all shadow-2xl shadow-wide/10 group">
-                  Falar com Especialista (27) 99695-5663
+                <a href={CONTACT_INFO.whatsapp.url} className="inline-flex items-center gap-4 bg-white text-black hover:bg-gray-100 px-10 py-6 rounded-3xl font-black text-xl transition-all shadow-2xl shadow-wide/10 group">
+                  Falar com Especialista {CONTACT_INFO.whatsapp.formatted}
                   <MessageSquare size={24} className="group-hover:rotate-12 transition-transform" />
                 </a>
               </div>
@@ -142,7 +143,7 @@ const App: React.FC = () => {
       <InstagramBanner />
 
       {/* Floating WhatsApp for Mobile Persistence */}
-      <a href="https://wa.me/5527996955663" target="_blank" rel="noopener noreferrer" className="fixed bottom-8 right-8 z-40 bg-emerald-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform md:hidden">
+      <a href={CONTACT_INFO.whatsapp.url} target="_blank" rel="noopener noreferrer" className="fixed bottom-8 right-8 z-40 bg-emerald-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform md:hidden">
         <MessageSquare size={32} />
       </a>
     </div>

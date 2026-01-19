@@ -1,31 +1,7 @@
 
 import React from 'react';
 import { Star, Quote } from 'lucide-react';
-import { Testimonial } from '../types';
-
-const testimonials: Testimonial[] = [
-  {
-    id: '1',
-    name: 'Carlos Mendes',
-    location: 'Ilheus, BA',
-    text: 'A COMM Soluções superou minhas expectativas. O efeito cimento queimado na sala ficou simplesmente perfeito. Equipe extremamente limpa e pontual.',
-    rating: 5,
-  },
-  {
-    id: '2',
-    name: 'Juliana Rocha',
-    location: 'Itabuna, BA',
-    text: 'Pintura comercial executada com maestria em nossa nova galeria. Entenderam perfeitamente a paleta de cores e o prazo foi cumprido à risca.',
-    rating: 5,
-  },
-  {
-    id: '3',
-    name: 'Ricardo Silva',
-    location: 'Itabuna, BA',
-    text: 'Fizemos toda a fachada  e interior da casa. O cuidado com os detalhes e o isolamento dos móveis foi impecável. Recomendo fortemente.',
-    rating: 5,
-  }
-];
+import { TESTIMONIALS, GOOGLE_RATING } from '../constants';
 
 const Testimonials: React.FC = () => {
   return (
@@ -42,12 +18,12 @@ const Testimonials: React.FC = () => {
             <Star fill="currentColor" size={20} />
             <Star fill="currentColor" size={20} />
             <Star fill="currentColor" size={20} />
-            <span className="text-black dark:text-white font-bold ml-2">4.9/5 no Google</span>
+            <span className="text-black dark:text-white font-bold ml-2">{GOOGLE_RATING.score}/{GOOGLE_RATING.total} no Google</span>
           </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-10">
-          {testimonials.map((t) => (
+          {TESTIMONIALS.map((t) => (
             <div key={t.id} className="relative bg-gray-50 dark:bg-gray-800 p-10 rounded-3xl border border-gray-100 dark:border-gray-700 text-center flex flex-col items-center lg:items-start lg:text-left">
               <Quote className="absolute top-8 right-8 text-gray-200 dark:text-gray-700" size={48} />
               <div className="flex gap-1 mb-6 text-amber-500">

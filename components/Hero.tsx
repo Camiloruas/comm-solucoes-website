@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { ArrowRight, MessageCircle } from 'lucide-react';
+import { CONTACT_INFO, IMAGES } from '../constants';
 
 const Hero: React.FC = () => {
   return (
@@ -16,7 +17,7 @@ const Hero: React.FC = () => {
               <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
               <span className="w-2 h-2 rounded-full bg-blue-500"></span>
             </span>
-            <span className="text-xs font-bold tracking-widest text-gray-600 dark:text-gray-300 uppercase">Excelência em Acabamento</span>
+            <span className="text-xs font-bold tracking-widest text-gray-600 dark:text-gray-300 uppercase">{CONTACT_INFO.company.tagline}</span>
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-black leading-tight md:leading-none tracking-tighter text-black dark:text-white">
@@ -29,7 +30,7 @@ const Hero: React.FC = () => {
           </p>
 
           <div className="flex flex-col items-center sm:flex-row sm:justify-center lg:justify-start gap-4 pt-4 w-full">
-            <a href="https://wa.me/5527996955663" className="inline-flex items-center justify-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-4 md:px-8 md:py-5 rounded-2xl font-bold text-base md:text-lg transition-all transform hover:-translate-y-1 shadow-xl shadow-emerald-200 dark:shadow-lg dark:shadow-emerald-500/20">
+            <a href={CONTACT_INFO.whatsapp.url} className="inline-flex items-center justify-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-4 md:px-8 md:py-5 rounded-2xl font-bold text-base md:text-lg transition-all transform hover:-translate-y-1 shadow-xl shadow-emerald-200 dark:shadow-lg dark:shadow-emerald-500/20">
               <MessageCircle size={24} />
               Solicitar Orçamento
             </a>
@@ -46,7 +47,7 @@ const Hero: React.FC = () => {
 
           <div className="relative rounded-3xl overflow-hidden shadow-2xl border-[8px] md:border-[12px] border-white dark:border-gray-800 transform rotate-3 hover:rotate-0 transition-transform duration-500">
             <img
-              src="https://images.unsplash.com/photo-1562664377-709f2c337eb2?q=80&w=1200&auto=format&fit=crop"
+              src={IMAGES.hero}
               alt="Pintura Moderna"
               className="w-full h-[400px] md:h-[600px] object-cover"
             />
