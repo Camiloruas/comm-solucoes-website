@@ -136,59 +136,6 @@ npm run validate
 └── .prettierrc.json    # Prettier configuration
 ```
 
-## Configuração
-
-### Atualizando Informações de Contato
-
-Edite `constants/contact.ts`:
-
-```typescript
-export const CONTACT_INFO = {
-  whatsapp: {
-    number: '5527996955663',
-    formatted: '(27) 99695-5663',
-    url: 'https://wa.me/5527996955663',
-  },
-  email: 'contato@commsolucoes.com.br',
-  location: 'Itabuna, BA.',
-  // ...
-};
-```
-
-### Atualizando Serviços
-
-Edite `constants/services.ts`:
-
-```typescript
-export const SERVICES: Service[] = [
-  {
-    id: '1',
-    title: 'Pintura Residencial',
-    description: 'Descrição do serviço...',
-    icon: React.createElement(Home, { size: 32 }),
-    color: 'bg-red-500',
-  },
-  // ...
-];
-```
-
-### Atualizando Depoimentos
-
-Edite `constants/testimonials.ts`:
-
-```typescript
-export const TESTIMONIALS: Testimonial[] = [
-  {
-    id: '1',
-    name: 'Nome do Cliente',
-    location: 'Cidade, Estado',
-    text: 'Depoimento do cliente...',
-    rating: 5,
-  },
-  // ...
-];
-```
-
 ## Testes
 
 O projeto possui 32 testes cobrindo:
