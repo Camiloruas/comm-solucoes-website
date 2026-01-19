@@ -81,5 +81,3 @@ All notable changes to the COMM SOLUÇÕES website will be documented in this fi
 - **Patch version (0.0.X)**: Bug fixes, backward compatible
 
 ---
-
-_All changes are co-authored by the development team and Claude Sonnet 4.5._
