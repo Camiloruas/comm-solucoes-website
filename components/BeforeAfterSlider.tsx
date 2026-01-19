@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 
 interface BeforeAfterSliderProps {
   beforeImg: string;
@@ -16,13 +16,13 @@ const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
   const [sliderPos, setSliderPos] = useState(50);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const handleMove = (e: React.MouseEvent | React.TouchEvent) => {
+  const handleMove = useCallback((e: React.MouseEvent | React.TouchEvent) => {
     if (!containerRef.current) return;
     const rect = containerRef.current.getBoundingClientRect();
     const x = 'touches' in e ? e.touches[0].clientX : e.clientX;
     const position = ((x - rect.left) / rect.width) * 100;
     setSliderPos(Math.min(Math.max(position, 0), 100));
-  };
+  }, []);
 
   return (
     <div
@@ -32,7 +32,12 @@ const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
       onTouchMove={handleMove}
     >
       {/* After Image (Background) */}
-      <img src={afterImg} alt="After" className="absolute inset-0 w-full h-full object-cover" />
+      <img
+        src={afterImg}
+        alt="After"
+        className="absolute inset-0 w-full h-full object-cover"
+        loading="lazy"
+      />
 
       {/* Before Image (Overlay) */}
       <div
@@ -44,6 +49,7 @@ const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
           alt="Before"
           className="absolute inset-0 w-full h-full object-cover max-w-none"
           style={{ width: containerRef.current?.offsetWidth }}
+          loading="lazy"
         />
       </div>
 

@@ -87,6 +87,7 @@ const App: React.FC = () => {
                 src={IMAGES.team}
                 alt="Nossa Equipe"
                 className="rounded-3xl shadow-2xl w-full h-[500px] object-cover"
+                loading="lazy"
               />
               <div className="absolute top-1/2 -translate-y-1/2 -right-8 w-24 h-24 bg-amber-500 rounded-full flex items-center justify-center text-white border-8 border-gray-50">
                 <Trophy size={32} />
