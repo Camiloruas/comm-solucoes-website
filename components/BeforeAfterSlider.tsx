@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect } from 'react';
 
 interface BeforeAfterSliderProps {
@@ -8,7 +7,12 @@ interface BeforeAfterSliderProps {
   afterLabel?: string;
 }
 
-const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({ beforeImg, afterImg, beforeLabel = "Antes", afterLabel = "Depois" }) => {
+const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
+  beforeImg,
+  afterImg,
+  beforeLabel = 'Antes',
+  afterLabel = 'Depois',
+}) => {
   const [sliderPos, setSliderPos] = useState(50);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -21,7 +25,7 @@ const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({ beforeImg, afterI
   };
 
   return (
-    <div 
+    <div
       ref={containerRef}
       className="relative w-full aspect-video overflow-hidden rounded-2xl cursor-ew-resize select-none shadow-2xl group"
       onMouseMove={handleMove}
@@ -29,23 +33,38 @@ const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({ beforeImg, afterI
     >
       {/* After Image (Background) */}
       <img src={afterImg} alt="After" className="absolute inset-0 w-full h-full object-cover" />
-      
+
       {/* Before Image (Overlay) */}
-      <div 
+      <div
         className="absolute inset-0 w-full h-full overflow-hidden"
         style={{ width: `${sliderPos}%` }}
       >
-        <img src={beforeImg} alt="Before" className="absolute inset-0 w-full h-full object-cover max-w-none" style={{ width: containerRef.current?.offsetWidth }} />
+        <img
+          src={beforeImg}
+          alt="Before"
+          className="absolute inset-0 w-full h-full object-cover max-w-none"
+          style={{ width: containerRef.current?.offsetWidth }}
+        />
       </div>
 
       {/* Slider Line & Handle */}
-      <div 
+      <div
         className="absolute top-0 bottom-0 w-1 bg-white shadow-xl flex items-center justify-center transition-all duration-75"
         style={{ left: `${sliderPos}%` }}
       >
         <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg border-2 border-gray-200">
-          <svg className="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M8 9l-4 3 4 3m8-6l4 3-4 3" />
+          <svg
+            className="w-6 h-6 text-gray-500"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={3}
+              d="M8 9l-4 3 4 3m8-6l4 3-4 3"
+            />
           </svg>
         </div>
       </div>

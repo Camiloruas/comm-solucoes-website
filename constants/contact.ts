@@ -10,6 +10,7 @@ export const CONTACT_INFO = {
     name: 'COMM SOLUÇÕES',
     foundedYear: 2015,
     tagline: 'Excelência em Acabamento',
-    description: 'Elevando o padrão de acabamento em pinturas e texturas residenciais e comerciais desde 2015. Transformamos espaços com paixão e técnica.',
+    description:
+      'Elevando o padrão de acabamento em pinturas e texturas residenciais e comerciais desde 2015. Transformamos espaços com paixão e técnica.',
   },
 } as const;

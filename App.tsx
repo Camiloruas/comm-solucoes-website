@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -21,26 +20,38 @@ const App: React.FC = () => {
       <Services />
 
       {/* Before and After Section */}
-      <section id="portfolio" className="py-24 bg-white dark:bg-gray-900 overflow-hidden transition-colors duration-300">
+      <section
+        id="portfolio"
+        className="py-24 bg-white dark:bg-gray-900 overflow-hidden transition-colors duration-300"
+      >
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8 text-center lg:text-left">
               <div className="space-y-4">
-                <h2 className="text-xs sm:text-sm font-bold tracking-[0.3em] uppercase text-gray-400">Transformação Real</h2>
-                <h2 className="text-2xl sm:text-3xl md:text-5xl font-black text-black dark:text-white leading-tight">MUDANÇA RADICAL <br />EM CADA DETALHE</h2>
+                <h2 className="text-xs sm:text-sm font-bold tracking-[0.3em] uppercase text-gray-400">
+                  Transformação Real
+                </h2>
+                <h2 className="text-2xl sm:text-3xl md:text-5xl font-black text-black dark:text-white leading-tight">
+                  MUDANÇA RADICAL <br />
+                  EM CADA DETALHE
+                </h2>
                 <div className="w-24 h-1 bg-emerald-500 rounded-full mx-auto lg:mx-0"></div>
               </div>
               <p className="text-lg md:text-xl text-gray-500 dark:text-gray-400 font-light leading-relaxed text-justify lg:text-left">
-                Utilizamos as melhores marcas do mercado (Suvinil, Coral, Sherwin-Williams) e técnicas exclusivas de aplicação para garantir resultados duradouros e visualmente impactantes.
+                Utilizamos as melhores marcas do mercado (Suvinil, Coral, Sherwin-Williams) e
+                técnicas exclusivas de aplicação para garantir resultados duradouros e visualmente
+                impactantes.
               </p>
               <ul className="space-y-4">
                 {[
                   'Nivelamento perfeito de superfícies',
                   'Isolamento total de móveis e pisos',
                   'Efeitos de textura sob medida',
-
                 ].map((item, idx) => (
-                  <li key={idx} className="flex items-center gap-3 text-gray-700 dark:text-gray-300 font-medium">
+                  <li
+                    key={idx}
+                    className="flex items-center gap-3 text-gray-700 dark:text-gray-300 font-medium"
+                  >
                     <CheckCircle className="text-emerald-500" size={20} />
                     {item}
                   </li>
@@ -55,7 +66,9 @@ const App: React.FC = () => {
               />
               <div className="absolute -bottom-6 -right-6 bg-black dark:bg-gray-800 text-white p-6 rounded-2xl shadow-xl hidden md:block">
                 <p className="text-3xl font-black">100%</p>
-                <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">Satisfação</p>
+                <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">
+                  Satisfação
+                </p>
               </div>
             </div>
           </div>
@@ -63,7 +76,10 @@ const App: React.FC = () => {
       </section>
 
       {/* About Section */}
-      <section id="sobre" className="py-24 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
+      <section
+        id="sobre"
+        className="py-24 bg-gray-50 dark:bg-gray-800 transition-colors duration-300"
+      >
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-5 relative order-2 lg:order-1">
@@ -79,28 +95,41 @@ const App: React.FC = () => {
 
             <div className="lg:col-span-7 space-y-8 order-1 lg:order-2 text-center lg:text-left">
               <div className="space-y-4">
-                <h2 className="text-xs sm:text-sm font-bold tracking-[0.3em] uppercase text-gray-400">Nossa História</h2>
-                <h2 className="text-2xl sm:text-3xl md:text-5xl font-black text-black dark:text-white leading-tight">PROFISSIONALISMO <br />QUE INSPIRA CONFIANÇA</h2>
+                <h2 className="text-xs sm:text-sm font-bold tracking-[0.3em] uppercase text-gray-400">
+                  Nossa História
+                </h2>
+                <h2 className="text-2xl sm:text-3xl md:text-5xl font-black text-black dark:text-white leading-tight">
+                  PROFISSIONALISMO <br />
+                  QUE INSPIRA CONFIANÇA
+                </h2>
                 <div className="w-24 h-1 bg-blue-500 rounded-full mx-auto lg:mx-0"></div>
               </div>
               <p className="text-lg text-gray-600 dark:text-gray-400 font-light leading-relaxed text-justify lg:text-left">
-                Fundada com o propósito de redefinir o setor de pintura, a COMM SOLUÇÕES une tradição técnica com as tendências mais modernas de decoração. Não somos apenas pintores; somos consultores de estética para o seu ambiente.
+                Fundada com o propósito de redefinir o setor de pintura, a COMM SOLUÇÕES une
+                tradição técnica com as tendências mais modernas de decoração. Não somos apenas
+                pintores; somos consultores de estética para o seu ambiente.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                 <div className="p-6 bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm text-center">
                   <ShieldCheck className="text-blue-500 mb-4 mx-auto" size={32} />
-                  <p className="font-bold text-black dark:text-white uppercase text-xs tracking-widest mb-2">Segurança</p>
+                  <p className="font-bold text-black dark:text-white uppercase text-xs tracking-widest mb-2">
+                    Segurança
+                  </p>
                   <p className="text-sm text-gray-500">Equipe segurada e uniformizada.</p>
                 </div>
                 <div className="p-6 bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm text-center">
                   <Clock className="text-emerald-500 mb-4 mx-auto" size={32} />
-                  <p className="font-bold text-black dark:text-white uppercase text-xs tracking-widest mb-2">Pontualidade</p>
+                  <p className="font-bold text-black dark:text-white uppercase text-xs tracking-widest mb-2">
+                    Pontualidade
+                  </p>
                   <p className="text-sm text-gray-500">Cumprimento rigoroso de cronograma.</p>
                 </div>
                 <div className="p-6 bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm text-center">
                   <CheckCircle className="text-red-500 mb-4 mx-auto" size={32} />
-                  <p className="font-bold text-black dark:text-white uppercase text-xs tracking-widest mb-2">Qualidade</p>
+                  <p className="font-bold text-black dark:text-white uppercase text-xs tracking-widest mb-2">
+                    Qualidade
+                  </p>
                   <p className="text-sm text-gray-500">Acabamento premium impecável.</p>
                 </div>
               </div>
@@ -122,12 +151,19 @@ const App: React.FC = () => {
             </div>
 
             <div className="relative z-10 space-y-8 max-w-2xl mx-auto">
-              <h2 className="text-4xl md:text-6xl font-black tracking-tighter">PRONTO PARA <br />RENOVAR SEU ESPAÇO?</h2>
+              <h2 className="text-4xl md:text-6xl font-black tracking-tighter">
+                PRONTO PARA <br />
+                RENOVAR SEU ESPAÇO?
+              </h2>
               <p className="text-xl text-gray-400 font-light">
-                Solicite um orçamento personalizado hoje mesmo. Atendimento rápido via WhatsApp com consultoria técnica gratuita.
+                Solicite um orçamento personalizado hoje mesmo. Atendimento rápido via WhatsApp com
+                consultoria técnica gratuita.
               </p>
               <div className="pt-6">
-                <a href={CONTACT_INFO.whatsapp.url} className="inline-flex items-center gap-4 bg-white text-black hover:bg-gray-100 px-10 py-6 rounded-3xl font-black text-xl transition-all shadow-2xl shadow-wide/10 group">
+                <a
+                  href={CONTACT_INFO.whatsapp.url}
+                  className="inline-flex items-center gap-4 bg-white text-black hover:bg-gray-100 px-10 py-6 rounded-3xl font-black text-xl transition-all shadow-2xl shadow-wide/10 group"
+                >
                   Falar com Especialista {CONTACT_INFO.whatsapp.formatted}
                   <MessageSquare size={24} className="group-hover:rotate-12 transition-transform" />
                 </a>
@@ -143,7 +179,12 @@ const App: React.FC = () => {
       <InstagramBanner />
 
       {/* Floating WhatsApp for Mobile Persistence */}
-      <a href={CONTACT_INFO.whatsapp.url} target="_blank" rel="noopener noreferrer" className="fixed bottom-8 right-8 z-40 bg-emerald-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform md:hidden">
+      <a
+        href={CONTACT_INFO.whatsapp.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-8 right-8 z-40 bg-emerald-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform md:hidden"
+      >
         <MessageSquare size={32} />
       </a>
     </div>

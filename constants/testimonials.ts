@@ -21,7 +21,7 @@ export const TESTIMONIALS: Testimonial[] = [
     location: 'Itabuna, BA',
     text: 'Fizemos toda a fachada  e interior da casa. O cuidado com os detalhes e o isolamento dos móveis foi impecável. Recomendo fortemente.',
     rating: 5,
-  }
+  },
 ];
 
 export const GOOGLE_RATING = {

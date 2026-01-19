@@ -6,7 +6,8 @@ export const SERVICES: Service[] = [
   {
     id: '1',
     title: 'Pintura Residencial',
-    description: 'Acabamento impecável para casas e apartamentos. Proteção e beleza para cada cômodo.',
+    description:
+      'Acabamento impecável para casas e apartamentos. Proteção e beleza para cada cômodo.',
     icon: React.createElement(Home, { size: 32 }),
     color: 'bg-red-500',
   },
@@ -30,5 +31,5 @@ export const SERVICES: Service[] = [
     description: 'Tratamento de superfícies, verniz, resinas e correções técnicas de alto padrão.',
     icon: React.createElement(Layers, { size: 32 }),
     color: 'bg-amber-500',
-  }
+  },
 ];

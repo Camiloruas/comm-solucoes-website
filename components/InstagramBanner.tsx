@@ -17,4 +17,3 @@ const InstagramBanner: React.FC = () => {
 };
 
 export default InstagramBanner;
-
